@@ -1,17 +1,17 @@
 version: "3"
 services:
     db:
-     build: ./mysql
+     image: mysql:latest
      volumes:
        - ./db_data:/var/lib/mysql
      restart: always
      ports:
        - "3307:3306"
      environment:
-       MYSQL_ROOT_PASSWORD: helloworld
-       MYSQL_DATABASE: helloworld
-       MYSQL_USER: helloworld
-       MYSQL_PASSWORD: helloworld 
+       MYSQL_ROOT_PASSWORD: 123456
+       MYSQL_DATABASE: testdb
+       MYSQL_USER: test
+       MYSQL_PASSWORD: 123456 
     php:
      volumes:
        - ./web:/www/web
