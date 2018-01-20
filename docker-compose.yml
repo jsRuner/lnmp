@@ -1,0 +1,30 @@
+version: "3"
+services:
+    db:
+     build: ./mysql
+     volumes:
+       - ./db_data:/var/lib/mysql
+     restart: always
+     ports:
+       - "3307:3306"
+     environment:
+       MYSQL_ROOT_PASSWORD: helloworld
+       MYSQL_DATABASE: helloworld
+       MYSQL_USER: helloworld
+       MYSQL_PASSWORD: helloworld 
+    php:
+     volumes:
+       - ./web:/www/web
+     depends_on:
+       - db
+     build: ./php-fpm
+     restart: always
+    nginx:
+     depends_on:
+       - php
+     volumes:
+       - ./web:/www/web
+     build: ./nginx
+     ports:
+       - "81:80"
+     restart: always
