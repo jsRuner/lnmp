@@ -1,8 +1,10 @@
 #基础镜像
-FROM daocloud.io/library/nginx:1.13.0
+FROM nginx:latest
 
 
 #修改配置。站点目录配置和php 请求。
+ADD nginx.conf /etc/nginx/
+
 ADD default.conf /etc/nginx/conf.d
 
 

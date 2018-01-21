@@ -1,0 +1,7 @@
+2018/01/21 03:52:50 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/01/21 03:52:51 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/01/21 03:52:52 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/01/21 03:52:53 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/01/21 03:52:55 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/01/21 03:53:02 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/01/21 03:53:06 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)

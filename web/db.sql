@@ -4,3 +4,7 @@ CREATE TABLE `user` (
   `username` char(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `user` (`id`, `uid`, `username`)
+VALUES
+	(1, 1, 'test');

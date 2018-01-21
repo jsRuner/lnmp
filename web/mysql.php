@@ -1,9 +1,9 @@
 <?php
 $mysql_conf = array(
     'host'    => 'db:3306', 
-    'db'      => 'helloworld', 
-    'db_user' => 'helloworld', 
-    'db_pwd'  => 'helloworld', 
+    'db'      => 'testdb', 
+    'db_user' => 'test', 
+    'db_pwd'  => '123456', 
     );
 
 $mysqli = @new mysqli($mysql_conf['host'], $mysql_conf['db_user'], $mysql_conf['db_pwd']);
