@@ -1,5 +1,4 @@
 <?php 
 
-eee
 phpinfo();
  ?>

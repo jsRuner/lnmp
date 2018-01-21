@@ -5,10 +5,12 @@ services:
     #mysql服务
     db:
       #服务器镜像
-     image: mysql:latest
+     build: ./mysql
+     # image: mysql:latest
      #磁盘映射。./db_data 是宿主的目录。后者是容器里的目录。
      volumes:
        - ./db_data:/var/lib/mysql
+       - ./log/mysql:/var/log/mysql
      restart: always
      # 端口映射。前者是宿主的。后者是容器里端口
      ports:

@@ -9,5 +9,5 @@ ADD default.conf /etc/nginx/conf.d
 
 
 #启动
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
 
