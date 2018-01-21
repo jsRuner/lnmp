@@ -8,6 +8,4 @@ ADD nginx.conf /etc/nginx/
 ADD default.conf /etc/nginx/conf.d
 
 
-#启动
-#CMD ["nginx", "-g", "daemon off;"]
 

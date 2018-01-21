@@ -9,5 +9,3 @@ RUN docker-php-ext-install mysqli
 
 ADD www.conf /usr/local/etc/php-fpm.d/www.conf
 
-#启动php
-CMD ["php-fpm"]
