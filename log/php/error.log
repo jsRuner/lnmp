@@ -4,3 +4,12 @@
 [21-Jan-2018 10:21:07 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /www/web/index.php on line 4
 [21-Jan-2018 10:21:11 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /www/web/index.php on line 4
 [21-Jan-2018 10:21:13 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /www/web/index.php on line 4
+[17-Jun-2018 16:12:04 Asia/shanghai] PHP Fatal error:  Uncaught Error: Class 'mysqli' not found in /www/web/mysql.php:9
+Stack trace:
+#0 {main}
+  thrown in /www/web/mysql.php on line 9
+[17-Jun-2018 16:14:16 Asia/shanghai] PHP Fatal error:  Uncaught Error: Class 'mysqli' not found in /www/web/mysql.php:9
+Stack trace:
+#0 {main}
+  thrown in /www/web/mysql.php on line 9
+[17-Jun-2018 16:18:28 Asia/shanghai] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /www/web/mysql.php on line 14

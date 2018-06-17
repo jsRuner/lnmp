@@ -14,7 +14,7 @@ services:
      restart: always
      # 端口映射。前者是宿主的。后者是容器里端口
      ports:
-       - "3307:3306"
+       - "3306:3306"
      #环境变量
      environment:
       #mysql的root密码
@@ -46,5 +46,5 @@ services:
        - ./log/nginx:/var/log/nginx
      build: ./nginx
      ports:
-       - "81:80"
+       - "80:80"
      restart: always

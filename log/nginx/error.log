@@ -5,3 +5,7 @@
 2018/01/21 03:52:55 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
 2018/01/21 03:53:02 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
 2018/01/21 03:53:06 [emerg] 1#1: open() "/var/log/nginx/log/host.access.log" failed (2: No such file or directory)
+2018/06/17 16:07:50 [error] 7#7: *1 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost"
+2018/06/17 16:11:37 [error] 7#7: *12 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /mysql.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost"
+2018/06/17 16:16:14 [error] 7#7: *19 open() "/www/web/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/mysql.php"
+2018/06/17 16:19:56 [error] 7#7: *21 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /mysql.php HTTP/1.1", upstream: "fastcgi://172.19.0.3:9000", host: "localhost"

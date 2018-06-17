@@ -16,3 +16,6 @@ Time                 Id Command    Argument
 mysqld, Version: 5.7.19-log (MySQL Community Server (GPL)). started with:
 Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
 Time                 Id Command    Argument
+mysqld, Version: 5.7.19-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument

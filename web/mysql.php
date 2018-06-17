@@ -1,27 +1,20 @@
 <?php
-$mysql_conf = array(
-    'host'    => 'db:3306', 
-    'db'      => 'testdb', 
-    'db_user' => 'test', 
-    'db_pwd'  => '123456', 
-    );
+$dbms='mysql';     //数据库类型
+$host='db:3306'; //数据库主机名
+$dbName='testdb';    //使用的数据库
+$user='test';      //数据库连接用户名
+$pass='123456';          //对应的密码
+$dsn="$dbms:host=$host;dbname=$dbName";
 
-$mysqli = @new mysqli($mysql_conf['host'], $mysql_conf['db_user'], $mysql_conf['db_pwd']);
-if ($mysqli->connect_errno) {
-    die("could not connect to the database:\n" . $mysqli->connect_error);//诊断连接错误
-}
-$mysqli->query("set names 'utf8';");//编码转化
-$select_db = $mysqli->select_db($mysql_conf['db']);
-if (!$select_db) {
-    die("could not connect to the db:\n" .  $mysqli->error);
-}$sql = "select uid,username from user;";
-$res = $mysqli->query($sql);
-if (!$res) {
-    die("sql error:\n" . $mysqli->error);
-}
- while ($row = $res->fetch_assoc()) {
-        var_dump($row);
+
+try {
+    $dbh = new PDO($dsn, $user, $pass); //初始化一个PDO对象
+    echo "连接成功<br/>";
+    foreach ($dbh->query('SELECT * from user') as $row) {
+        print_r($row); //你可以用 echo($GLOBAL); 来看到这些值
     }
-$res->free();
-$mysqli->close();
+    $dbh = null;
+} catch (PDOException $e) {
+    die ("Error!: " . $e->getMessage() . "<br/>");
+}
 ?>
