@@ -35,6 +35,11 @@ RUN apt-get install -y libmagickwand-6.q16-dev --no-install-recommends \
  && pecl install imagick \
  && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/ext-imagick.ini
 
+ RUN mkdir -p /usr/src/php/ext/redis \
+    && curl -L https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz | tar xvz -C /usr/src/php/ext/redis --strip 1 \
+    && echo 'redis' >> /usr/src/php-available-exts \
+    && docker-php-ext-install redis
+
 
 ADD www.conf /usr/local/etc/php-fpm.d/www.conf
 
